@@ -1635,7 +1635,7 @@ pre code {
 
 <h1 class="title toc-ignore">Lab 01: Getting Started with RStudio</h1>
 <h4 class="author">Authors: Bruno Grande and Ryan Morin</h4>
-<h4 class="date">Last updated: 2022-09-23</h4>
+<h4 class="date">Last updated: 2022-09-25</h4>
 
 </div>
 
@@ -2028,7 +2028,7 @@ cat EMPTY.txt
 # The redirect operators &gt; and &gt;&gt; are related but have different effects on existing files. It&#39;s important that you know the difference. 
 # If you aren&#39;t clear, go back to the earlier portion of this document that introduces it and/or ask the TA or instructor. </code></pre>
 <pre><code>## Hello terminal!
-## Fri Sep 23 13:34:46 PDT 2022</code></pre>
+## Sun Sep 25 16:02:04 PDT 2022</code></pre>
 <p><strong>Task:</strong></p>
 <p>Make a copy of the code chunk above and put it below this text in
 your version of the Rmd file. Modify the code so it instead creates a
@@ -2166,7 +2166,7 @@ code below to print the contents of other environment variables such as
 HOME, HOSTNAME, and USER.</p>
 <pre class="bash"><code>echo $PATH
 </code></pre>
-<pre><code>## /localhome/chihungn/miniconda3/bin:/local-scratch/localhome/chihungn/miniconda3/bin:/localhome/chihungn/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/lib/rstudio-server/bin/quarto/bin:/usr/lib/rstudio-server/bin/postback</code></pre>
+<pre><code>## /localhome/chihungn/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/lib/rstudio-server/bin/quarto/bin:/usr/lib/rstudio-server/bin/postback:/usr/lib/rstudio-server/bin/postback:/usr/lib/rstudio-server/bin/postback:/usr/lib/rstudio-server/bin/postback:/usr/lib/rstudio-server/bin/postback</code></pre>
 <p><strong>Task</strong></p>
 <p>In the Terminal you need to run the script miniconda_installer.sh.
 This will launch an interactive process so you will have to run it
@@ -2211,9 +2211,9 @@ two interpreters can yield different results even if the syntax is
 <pre class="python"><code>this_string = &quot;ATT&quot; + &quot;TAG&quot;
 this_string</code></pre>
 <pre><code>## &#39;ATTTAG&#39;</code></pre>
-<pre class="r"><code>this_string &lt;- paste(&quot;ATT&quot;,&quot;TAG&quot;)
-this_string</code></pre>
-<pre><code>## [1] &quot;ATT TAG&quot;</code></pre>
+<pre class="r"><code>this_string &lt;- paste(&quot;ATT&quot;,&quot;TAG&quot;,sep=&quot;&quot;)
+this_string
+class(this_string) </code></pre>
 <p>The second code block will throw an error if evaluated. Try running
 the block or change it to <code>eval=TRUE</code> then knit the
 document.</p>

@@ -235,9 +235,10 @@ this_string = "ATT" + "TAG"
 this_string
 
 ```
-```{r,eval=TRUE}
-this_string <- paste("ATT","TAG")
+```{r,eval=FALSE}
+this_string <- paste("ATT","TAG",sep="")
 this_string
+class(this_string) 
 ```
 The second code block will throw an error if evaluated. Try running the block or change it to `eval=TRUE` then knit the document. 
 

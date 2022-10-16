@@ -138,7 +138,7 @@ print hello
 
 **Task**
 
-At some point during the semester, every student must post at least one good question to the course StackOverflow page. Ideally this will happen naturally when each of you inevitably get stuck. If you don't get stuck you can still mock up a question and post it. *This will be counted towards the participation component of your mark.*
+At some point during the semester, every student must post at least one good question to the course StackOverflow page. Ideally this will happen naturally when each of you inevitably get stuck. If you don't get stuck you can still mock up a question and post it. *This will be counted towards the participation component of your mark.* ok
 
 ## More Resources
 
